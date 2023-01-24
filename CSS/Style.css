@@ -1,0 +1,335 @@
+/* All Common CSS Starts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --over:rgba(40, 31, 48, 0.6);
+    --mont:'Montserrat', sans-serif;
+    --hover:#753d9d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.stick{}
+
+/* All Common CSS Ends */
+/* Navbar Part Starts */
+
+#navbar{
+    padding: 43px 0;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+#navbar .main_navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar .main_navbar .navbar_logo{
+    width: 165px;
+}
+
+#navbar .main_navbar .navbar_item{
+    width: 975px;
+}
+
+#navbar .main_navbar .navbar_item ul{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+
+#navbar .main_navbar .navbar_item ul li a{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family:var(--mont) ;
+    transition: all linear 0.3s;
+}
+
+
+
+/* Navbar Part Ends */
+/* Banner Part Starts */
+.banner{
+    background: url(../Images/banner.png);
+}
+.banner .overlay{
+    color: #753d9d;
+    padding-top: 200px;
+}
+.banner .banner_item .banner_main{
+    text-align: center;
+}
+
+.banner .banner_item .banner_main h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: var(--mont);
+} 
+.banner .banner_item .banner_main h1:hover{
+    color: #753d9d;
+}
+.banner .banner_item .banner_main p{
+    padding-top: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--mont);
+    line-height: 26px;
+}
+.banner .banner_item .banner_btn{
+    padding: 60px 0 145px;
+}
+
+.banner .banner_item .banner_main p span{
+display: block;
+}
+
+.banner .banner_item .banner_btn a{
+    width: 262px;
+    border-radius: 10px;
+    padding: 20px 50px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    margin-left: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--mont);
+    transition: all linear 0.3s;
+}
+.banner .banner_item .banner_btn a:hover{
+    background: var(--hover);
+    border: 2px solid var(--hover);
+}
+/* Banner Part Ends */
+
+/* About Part Starts */
+#about{
+    padding: 85px 0;
+}
+
+#about .about_main{
+    display: flex;
+    gap: 40px;
+}
+
+#about .about_main .written{}
+
+#about .about_main .written .divide{
+    display: flex;
+      gap: 15px;
+}
+
+
+#about .about_main .written .divide .heading{
+  width: 640px;
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--mont);
+  display: block;
+}
+
+#about .about_main .written .divide .heading p{
+     display: inline-block;
+     color: var(--hover);
+}
+
+#about .about_main .written .divide .heading span{
+display: block;
+font-weight:500;
+}
+
+#about .about_main .written .text{
+    width: 640px;
+    padding: 52px 0;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--mont);
+    line-height: 26px;
+}
+
+#about .about_main .written .about_btn{
+    width: 260px;
+    padding: 26px 0;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--mont);
+    transition: all linear 0.3s;
+}
+
+#about .about_main .written .about_btn a{
+    color: black;
+}
+#about .about_main .written .about_btn:hover{
+background: var(--hover);
+border: 1px solid var(--hover);
+cursor: pointer;
+}
+
+#about .about_main  .image {
+    width: 457px;
+    position:relative;
+    top: 0;
+    left: 0;
+    background: var(--over);
+}
+#about .about_main .image .overlay{
+    width: 100%;
+    height: 100%;
+    background: var(--over);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#about .about_main .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#line{
+    line-height: 2px;
+    background: #e0e0e0;
+    color: transparent;
+}
+/* About Part Ends */
+/* Feature Part Starts */
+#feature{
+    padding: 70px 0;
+    /* display: flex; */
+}
+#feature .feature_div{
+    display: flex;
+    gap: 20px;
+}
+
+#feature .feature_main{
+    width: 350px;
+}
+
+#feature .feature_main .feature_image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#feature .feature_main .feature_image h2{
+    font-size: 21px;
+    font-weight: 700;
+    font-family: var(--mont);
+}
+
+#feature .feature_main .feature_text{
+padding-top: 20px;
+color: black;
+font-size: 15px;
+font-weight: 500;
+font-family: var(--mont);
+line-height: 26px;
+}
+/* Feature Part Ends */
+
+/* Mobile Part Starts */
+#mobile{
+    background: url(../Images/mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mobile .overlay{
+    padding: 100px 0;
+    background: rgba(40, 31, 48, .6);
+}
+
+#mobile .overlay .mobile_item{
+    padding: 100px auto;
+}
+
+#mobile .overlay .mobile_item h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--mont);
+}
+
+#mobile .overlay .mobile_item .mobile_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px ;
+}
+
+#mobile .overlay .mobile_item .mobile_btn a{ 
+    width: 262px;
+    padding: 26px 60px;
+    border: 1px solid var(--hover);
+    background: var(--hover);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--mont);
+}
+/* Mobile Part Starts */
+
+/* Services Part Starts */
+#services{
+    padding-top: 63px; ;
+}
+
+#services .services_container{}
+
+#services .services_container .services_text{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#services .services_contsainer .services_text .stick{
+
+}
+
+#services .services_container .services_text h1{
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: var(--mont);
+}
+
+#services .services_container .services_image{
+}
+/* Services Part Ends */
